@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
   "license": "MIT",
+  "keywords": [
+    "react pricing card",
+    "react pricing",
+    "pricing-paper",
+    "react pricing component"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [

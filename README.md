@@ -22,16 +22,16 @@ npm i pricing-paper
 ```bash
 import Pricing from 'pricing-paper'
 
-const firstPlan ={
+const firstPlan = {
   'title': 'Demo 1',
   'price': 'FREE'
 }
-const popularPlan ={
+const popularPlan = {
   'title': 'Demo 2',
   'price': '$54'
 }
 
-const lastPlan ={
+const lastPlan = {
   'title': 'Demo 3',
   'price': '$99'
 }
@@ -131,9 +131,10 @@ const styles = {
   'badge': {
     
   }
+}
 
-  const alertMe = () => {
-  alert("Hello from pricing-paper!")
+const alertMe = () => {
+  alert("Hi")
 }
 
  <Pricing firstPlan={firstPlan}
