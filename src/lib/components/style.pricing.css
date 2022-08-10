@@ -1,30 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Varela+Round&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Source Sans Pro", sans-serif;
-}
 
-body {
-    background-color: #dff9fb;
+
+.main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-h1 {
+.pricing .plan h1 {
     text-align: center;
     margin-top: 2rem;
 }
 
-p {
-    text-align: center;
-    margin-bottom: 4.2rem;
-}
 
 .pricing {
     display: flex;
@@ -54,11 +44,13 @@ p {
 }
 
 .pricing .plan ul.features {
+    display: inline;
     list-style-type: none;
     text-align: left;
 }
 
 .pricing .plan ul.features li {
+    text-align: center;
     margin: 8px;
 }
 

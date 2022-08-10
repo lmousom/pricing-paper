@@ -7,6 +7,10 @@
     "pricing-paper",
     "react pricing component"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmousom/pricing-paper.git"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
