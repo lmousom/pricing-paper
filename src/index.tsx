@@ -1,3 +1,3 @@
-import Pricing from "./lib/components/Pricing"
+import Pricing from './lib/components/Pricing';
 
-export default Pricing
+export default Pricing;
