@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.pricing.css';
-import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 import Button from './Button';
 import { PricingProps } from '../typeDefinition';
+import FeatureContainer from './FeatureContainer';
 
 const Pricing = (props: PricingProps) => {
   return (
@@ -16,20 +16,7 @@ const Pricing = (props: PricingProps) => {
             <div style={props?.styles?.planCardPrice} className="price">
               {props.firstPlan.price}
             </div>
-            <ul className="features">
-              {props.firstFeatures.map((feature, index) => (
-                <li key={index}>
-                  <span>
-                    {feature.applicable ? (
-                      <FaCheckCircle className="fas fa-check-circle" />
-                    ) : (
-                      <FaTimesCircle className="fas fa-cross-circle" />
-                    )}
-                  </span>
-                  {feature.name}
-                </li>
-              ))}
-            </ul>
+            <FeatureContainer features={props.firstFeatures} />
             <Button
               buttonStyle={props?.styles?.planButton}
               handleClick={props.handleClick}
@@ -47,20 +34,7 @@ const Pricing = (props: PricingProps) => {
             <div style={props?.styles?.planCardPrice} className="price">
               {props.popularPlan.price}
             </div>
-            <ul className="features">
-              {props.popularFeatures.map((feature, index) => (
-                <li key={index}>
-                  <span>
-                    {feature.applicable ? (
-                      <FaCheckCircle className="fas fa-check-circle" />
-                    ) : (
-                      <FaTimesCircle className="fas fa-cross-circle" />
-                    )}
-                  </span>
-                  {feature.name}
-                </li>
-              ))}
-            </ul>
+            <FeatureContainer features={props.popularFeatures} />
             <Button
               buttonStyle={props?.styles?.planButton}
               handleClick={props.handleClick}
@@ -73,20 +47,7 @@ const Pricing = (props: PricingProps) => {
             <div style={props?.styles?.planCardPrice} className="price">
               {props.lastPlan.price}
             </div>
-            <ul className="features">
-              {props.lastFeatures.map((feature, index) => (
-                <li key={index}>
-                  <span>
-                    {feature.applicable ? (
-                      <FaCheckCircle className="fas fa-check-circle" />
-                    ) : (
-                      <FaTimesCircle className="fas fa-cross-circle" />
-                    )}
-                  </span>
-                  {feature.name}
-                </li>
-              ))}
-            </ul>
+            <FeatureContainer features={props.lastFeatures} />
             <Button
               buttonStyle={props?.styles?.planButton}
               handleClick={props.handleClick}

@@ -2,6 +2,10 @@
 
 A react pricing component to easily integrate in your application. ✨
 
+[![npm version](https://badge.fury.io/js/pricing-paper.svg)](https://badge.fury.io/js/pricing-paper)
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 ## Features
 
 - Create pricing page in 10 line of code 🥳

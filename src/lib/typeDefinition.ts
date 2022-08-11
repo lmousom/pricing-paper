@@ -16,6 +16,10 @@ type ButtonDisabled = Boolean;
 
 type Features = Feature[];
 
+export declare interface FeaturesProp {
+  features: Features;
+}
+
 interface Styles {
   planCard?: React.CSSProperties;
   planHeroCard?: React.CSSProperties;
